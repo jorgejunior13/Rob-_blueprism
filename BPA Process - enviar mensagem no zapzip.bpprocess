@@ -1,0 +1,31 @@
+﻿<process name="enviar mensagem no zapzip" version="1.0" bpversion="6.10.2.42081" narrative="enviar mensagem no zap" byrefcollection="true" preferredid="4f55f689-4381-4a6d-936d-2763f27f3717">
+  <view>
+    <camerax>0</camerax>
+    <cameray>-26</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="7e21b984-fca2-46f0-aa8a-8e21aba829d3" name="Start" type="Start">
+    <display x="15" y="-120" />
+    <onsuccess>465ad62d-242a-4f1b-948d-bc9e76019e68</onsuccess>
+  </stage>
+  <stage stageid="0b17550c-9903-4cd5-a350-07abcedacc81" name="End" type="End">
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="d0c7a2a2-cbc5-4a3c-9e08-ede154554a32" name="Stage1" type="ProcessInfo">
+    <display x="-225" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="465ad62d-242a-4f1b-948d-bc9e76019e68" name="Enviar mensagem no zapzap::launch" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-60" />
+    <onsuccess>dee18f41-fe95-4aa2-a67c-0a0c405bd5d6</onsuccess>
+    <resource object="Enviar mensagem no zapzap" action="launch" />
+  </stage>
+  <stage stageid="dee18f41-fe95-4aa2-a67c-0a0c405bd5d6" name="Enviar mensagem no zapzap::zapzap" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="15" />
+    <onsuccess>0b17550c-9903-4cd5-a350-07abcedacc81</onsuccess>
+    <resource object="Enviar mensagem no zapzap" action="zapzap" />
+  </stage>
+</process>
